@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passward generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h3 id="texth3">PassWord Generator: A new way of creating strong passwords with us 🧔🏻  <i>Millions of alternatives & repeat nothing</i></h3>
+ 
+   
+    <form name="form1">
+            
+
+            <label for="text1" class="output1" >Enter your name:</label>
+        <input type="text" id="text1" name="text" required placeholder="enter your fancy name">
+        
+        
+        
+            <label for="text2" class="output1">Enter your email*:</label>
+        <input type="email" id="text2" name="email" required>
+        
+            <label class="visually-hidden" for="autoSizingSelect" class="output1"> Preference</label>
+            <select class="form-select" id="autoSizingSelect" name="Selection" required>
+              <option value="2" selected >alpha+specialchar+specialnum(Recommended)</option>
+              <option value="3">alpha+number</option>
+            </select>
+          
+        
+          <button type="button" class="btn">Submit</button>
+           <!-- if "buttton" is typed as "submit", 
+            applying "addeventlistner" work only for few miliseconds. So always "type=button"
+             is mandatory to work as stable. -->
+             <button type="reset" class="clr">Clear</button> <!-- to reset the form with this button we need "type=reset" and add to eventlistner -->
+         
+        <label for="output" class="output1">Your Strong password is here 👻</label>
+        <input type="passwords" id="output" class="placeholder" placeholder=" Password is of your choice" ><button type="button" class="regenerate">Regenerate 🔄️</button>
+   
+       
+    </form>
+
+
+
+  
+  
+    
+
+
+    <footer>
+        <div id="color">
+            <div>©️ All rights are reserved</div>
+            <div>About us</div>
+           <a href="tel:6290193608" type="tel" target="_blank" style="text-decoration: none; color:rgb(73, 130, 235);">Contact us</a>
+            <a href="mailto:hnstkrishnendu612@gmail.com" type="email" target="_blank" style="text-decoration: none; color: rgb(73, 130, 235);">Support mail</a>
+        
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js" integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

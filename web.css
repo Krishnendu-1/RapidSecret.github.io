@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+font-family: Arial, Helvetica, sans-serif;    
+}
+body{
+    background-color:#cadcfc;
+}
+
+
+form{
+    width: 30vw;
+    height: 30vh;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    row-gap: 1vh;
+position: absolute;
+left: 50%;
+top: 40%;
+transform: translate(-50%,-50%);
+}
+
+
+
+.placeholder{
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
+    text-align: center;
+    display: none;
+    
+}
+button:hover{
+    cursor: pointer;
+}
+
+#color{
+    
+   
+    background-color:#e7e8d1 ;
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgba(0, 0, 0, 0.826);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+
+}
+
+h3{
+    width: 55vw;
+    height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   position: absolute;
+   top:10%;
+   left: 20%;    
+  
+
+}
+h3>i{
+    font-weight: bold; 
+    font-size: larger;
+    margin-top: 2vh;
+    color: rgb(37, 46, 65);
+}
+
+.regenerate{
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    
+   
+}
+
+
+
+@media (max-width:700px) {
+    body{
+        width: auto;
+        height: auto;
+        background-color:rgb(214, 214, 202);
+    }
+   h3{
+    width: 80vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 6%;
+    left: 9%;
+    text-align: justify;  
+   }
+   form{
+    margin-top: 4vh;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 1vh;
+    grid-template-columns: repeat(1, 50vw);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#color{
+    background-color:#e7e8d1 ;
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgba(0, 0, 0, 0.826);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    
+}
+
+h3>i{
+     font-weight: bold;
+     font-size: 2.5vh;
+     margin-top: 2vh;
+
+     color: rgb(37, 46, 65);
+}
+.regenerate{
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    cursor: pointer;
+   
+}
+    
+}
